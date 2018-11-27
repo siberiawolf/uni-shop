@@ -1,16 +1,125 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages		
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
+			"path" : "pages/index/index",
+			"style" : {
+				"navigationBarTitleText" : "",
+				"app-plus" : {
+					"titleNView" : {
+						"type" : "transparent"
+					}
+				}
 			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+		},
+        {
+            "path" : "pages/tabBar/news/news",
+            "style" : {
+                "navigationBarTitleText" : "微商",
+                "enablePullDownRefresh" : true,
+                "onReachBottomDistance" : 50
+            }
+        },
+        {
+            "path" : "pages/tabBar/contact/contact",
+            "style" : {
+                "navigationBarTitleText" : "联系"
+            }
+        },
+        {
+            "path" : "pages/tabBar/mine/mine",
+            "style" : {
+                "navigationBarTitleText" : "我"
+            }
+        },
+        {
+            "path" : "pages/denglu/login/login",
+            "style" : {
+                "navigationBarTitleText" : "登录"
+            }
+        },
+        {
+            "path" : "pages/denglu/register/register",
+            "style" : {
+                "navigationBarTitleText" : "注册"
+            }
+        },
+        {
+            "path" : "pages/denglu/password/password",
+            "style" : {
+                "navigationBarTitleText" : "忘记密码"
+            }
+        },
+        {
+            "path" : "pages/denglu/logout/logout",
+            "style" : {
+                "navigationBarTitleText" : "退出"
+            }
+        },
+        {
+            "path" : "pages/mine/info/info",
+            "style" : {
+                "navigationBarTitleText" : "个人信息"
+            }
+        },
+        {
+            "path" : "pages/mine/qrcode/qrcode",
+            "style" : {
+                "navigationBarTitleText" : "我的二维码"
+            }
+        },
+        {
+            "path" : "pages/mine/logo/logo",
+            "style" : {
+                "navigationBarTitleText" : "个人头像"
+            }
+        },
+        {
+            "path" : "pages/mine/scan/scan",
+            "style" : {}
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "微商",
+        "navigationBarBackgroundColor" : "#F8F8F8",
+        "backgroundColor" : "#F8F8F8"
+    },
+    "tabBar" : {
+        "color" : "#929292",
+        "selectedColor" : "#1afa29",
+        "borderStyle" : "black",
+        "backgroundColor" : "#ffffff",
+        "list" : [
+            {
+                "pagePath" : "pages/tabBar/news/news",
+                "iconPath" : "static/news.png",
+                "selectedIconPath" : "static/newsHL.png",
+                "text" : "消息"
+            },
+            {
+                "pagePath" : "pages/tabBar/contact/contact",
+                "iconPath" : "static/contact.png",
+                "selectedIconPath" : "static/contactHL.png",
+                "text" : "联系"
+            },
+            {
+                "pagePath" : "pages/tabBar/mine/mine",
+                "iconPath" : "static/mine.png",
+                "selectedIconPath" : "static/mineHL.png",
+                "text" : "我的"
+            }
+        ]
+    },
+    "condition" : {
+        //模式配置，仅开发期间生效
+        "current" : 0, //当前激活的模式（list 的索引项）
+        "list" : [
+            {
+                "name" : "mine",
+                "path" : "pages/index/index",
+                "query" : ""
+            }
+        ]
+    }
 }
