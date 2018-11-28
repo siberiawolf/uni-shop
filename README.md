@@ -19,4 +19,8 @@
 - [qrcode二维码](https://github.com/dcloudio/hello-uniapp/tree/master/pages/template/qrcode)：参考这个页面内容，可以生成二维码。
 - [scan扫描二维码](https://github.com/dcloudio/hello-uniapp/tree/master/pages/API/scan-code)：参考这个例子可以实现扫描二维码。
 
+## 相关文章
 
+整理的相关学习文章：
+- [uni-app官方教程学习手记](https://segmentfault.com/a/1190000017020710)
+- [uni-app 创建的第一个应用](https://segmentfault.com/a/1190000017168549)
