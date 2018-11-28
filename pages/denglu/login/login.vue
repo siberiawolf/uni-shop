@@ -2,11 +2,11 @@
     <view class="content">
         <view class="input-group">
             <view class="input-row border">
-                <text class="title">账号：</text>
+                <text class="title">账号</text>
                 <input type="text" v-model="account" placeholder="请输入账号">
             </view>
             <view class="input-row">
-                <text class="title">密码：</text>
+                <text class="title">密码</text>
                 <input type="text" password="true" v-model="password" placeholder="请输入密码">
             </view>
         </view>
@@ -67,5 +67,9 @@
 </script>
 
 <style>
-	@import '../../../common/denglu.css'
+	@import '../../../common/denglu.css';
+	
+	.input-row input{
+		margin-left: 15upx;
+	}
 </style>

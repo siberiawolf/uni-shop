@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<view class="img-skip" @tap="bindSkip">
+		<view class="img-skip" @tap="bindSkip"> 
 			<text>跳过</text>
 		</view>
 		<swiper indicator-dots="true" autoplay="true">
@@ -40,7 +40,7 @@
 					url: '../tabBar/news/news'
 				});
 			}
-		}
+		}  
 	}
 </script>
 
@@ -52,9 +52,9 @@
 		width: 2.5em;
 		height: 1.6em;
 		position: absolute;
-		z-index: 100;
-		right: 10upx;
-		top: 10upx;
+		z-index: 100; 
+		right: 15upx;
+		top: 50px; /*隐藏导航条的高度为44px*/
 		background-color: #D3D3D3;
 		text-align: center;
 		border-radius: 15%;
