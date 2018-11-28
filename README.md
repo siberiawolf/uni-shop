@@ -19,7 +19,7 @@
 - [qrcode二维码](https://github.com/dcloudio/hello-uniapp/tree/master/pages/template/qrcode)：参考这个页面内容，可以生成二维码。
 - [scan扫描二维码](https://github.com/dcloudio/hello-uniapp/tree/master/pages/API/scan-code)：参考这个例子可以实现扫描二维码。
 
-# 修复的bug问题
+## 修复的bug问题
 
 - 注册页面文字两端对齐bug。本来以为跟浏览器中一样，使用转义字符就能解决，项目中使用了`&emsp;`，但是发现在某些安卓机中，会失效。所以改成了css实现两端对齐。使用css3 [justify-content](http://www.runoob.com/cssref/css3-pr-justify-content.html)实现。
 - 启动页跳过按钮失效。启动页计划是不显示导航栏的，为了跳过启动页，添加了一个跳过按钮。但是我没有考虑到导航栏的高度。因为我本来以为这个导航栏已经被隐藏了，其实不然，这个导航栏一直存在，只不过变成了透明而已。如果这个跳过按钮位置是在导航栏上，会导致按钮失效。通过查找论坛文档，找到了这个导航栏高度[【示例】原生标题栏titleNView使用说明](http://ask.dcloud.net.cn/article/1205)，是固定高度44px。
